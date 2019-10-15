@@ -24,3 +24,12 @@ Route::group(['prefix'=>'primeiroexercicio'], function(){
     
     Route::get('/calculo','Controller@calculaimc');
 });
+
+Route::group(['prefix'=>'segundoexercicio'], function(){
+    
+    Route::get('/', function () {
+        return view('calc');
+    });
+    
+    Route::get('/calculo2','Controller@calculanumbers');
+});

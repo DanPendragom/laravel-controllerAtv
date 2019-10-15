@@ -22,5 +22,15 @@ class Controller extends BaseController
         
         return "<h1>Olá $nome, seu imc é $imc</h1>";
     }
+    
+    public function calculanumbers(){
+        $val1 = $_GET['valor1'];
+        $val2 = $_GET['valor2'];
+        
+        $calc = $val1 + $val2;
+        
+        return "A soma dos valores é $calc";
+        
+    }
 }
 

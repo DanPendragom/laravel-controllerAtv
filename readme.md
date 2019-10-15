@@ -1,4 +1,4 @@
-# ATIVIDADE DE PROGRAMAÇÃO WEB III - 2DS3
+# ATIVIDADE DE PROGRAMAÇÃO WEB III - 3DS2
 
 **Aluno: Carlos Emilio Silva Coutinho**
 1. Utilizando o conceito de grupo de rotas abordado na aula anterior crie um grupo de rotas que receba dados inseridos pelo usuário, estes dados serão nome, altura, peso, idade e sexo.

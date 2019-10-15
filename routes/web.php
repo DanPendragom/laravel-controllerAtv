@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::group(['prefix'=>'primeiroexercicio'], function(){
+    
+    Route::get('/', function () {
+        return view('imc');
+    });
+    
+    Route::get('/calculo','Controller@calculaimc');
+});

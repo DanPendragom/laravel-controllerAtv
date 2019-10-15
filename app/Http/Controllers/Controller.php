@@ -32,5 +32,12 @@ class Controller extends BaseController
         return "A soma dos valores é $calc";
         
     }
+    
+    public function calculaquad(){
+        $val = $_GET['value'];
+        $valquad = $val * $val;
+        
+        return "<h1>$val ao quadrado é $valquad </h1>";
+    }
 }
 

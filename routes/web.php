@@ -33,3 +33,12 @@ Route::group(['prefix'=>'segundoexercicio'], function(){
     
     Route::get('/calculo2','Controller@calculanumbers');
 });
+
+Route::group(['prefix'=>'terceiroexercicio'], function(){
+    
+    Route::get('/', function () {
+        return view('quad');
+    });
+    
+    Route::get('/calculo3','Controller@calculaquad');
+});

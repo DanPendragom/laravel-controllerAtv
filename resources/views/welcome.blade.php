@@ -11,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         h1{
             
@@ -46,6 +47,9 @@
             grid-row: 2/3;
             margin-top: 75px;
             margin-right:40px;
+        }
+        .aside img{
+            width: 85%;
         }
         .section.texts{
             display: flex;
@@ -94,9 +98,6 @@
         .options button:nth-child(3){
             grid-column: 1/2;
             grid-row: 3/4;
-        }
-        .aside img{
-            width: 100%;
         } 
     </style>
 </head>
@@ -113,14 +114,16 @@
                 <span>To the amazing PHP framework</span>
                 </div>
             <div class="options">
-                <button>MY IMC</button>
-                <button>GET CALC</button>
-                <button>GET SQUAD</button>
+                <button onclick="(function(){ window.location.href = 'index.php/primeiroexercicio/imc'})()">MY IMC</button>
+                <button onclick="(function(){ window.location.href = 'index.php/segundoexercicio/calc'})()">GET CALC</button>
+                <button onclick="(function(){ window.location.href = 'index.php/terceiroexercicio/quad'})()">GET SQUAD</button>
             </div>
         </div>
         <div class="aside">
             <img ondragstart='return false' src="{{ url('assets/img.svg') }}" />
         </div>
     </div>
+    <script type="text/javascript" src=""> 
+    </script>
 </body>
 </html>

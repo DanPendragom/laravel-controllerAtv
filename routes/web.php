@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::group(['prefix'=>'primeiroexercicio'], function(){
     
-    Route::get('/', function () {
+    Route::get('imc', function () {
         return view('imc');
     });
     
@@ -27,7 +27,7 @@ Route::group(['prefix'=>'primeiroexercicio'], function(){
 
 Route::group(['prefix'=>'segundoexercicio'], function(){
     
-    Route::get('/', function () {
+    Route::get('calc', function () {
         return view('calc');
     });
     
@@ -36,7 +36,7 @@ Route::group(['prefix'=>'segundoexercicio'], function(){
 
 Route::group(['prefix'=>'terceiroexercicio'], function(){
     
-    Route::get('/', function () {
+    Route::get('quad', function () {
         return view('quad');
     });
     

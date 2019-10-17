@@ -20,16 +20,48 @@ class Controller extends BaseController
         $imc = $peso/($altura * $altura);
         $imc = round($imc,2);
         
-        return "<h1>Olá $nome, seu imc é $imc</h1>";
+        echo "
+            <style>
+            div{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 34px;
+                text-align:center;
+            }
+            span{
+                color: #909090;
+            }
+            </style>
+        ";
+        
+        return "<div> <h1>Olá $nome, seu Indice de Massa Corpórea é <i>$imc</i><br><span>#ParabénsPorSer$sexo</span></h1></div>";
     }
     
     public function calculanumbers(){
         $val1 = $_GET['valor1'];
         $val2 = $_GET['valor2'];
-        
         $calc = $val1 + $val2;
         
-        return "A soma dos valores é $calc";
+        echo "
+            <style>
+            div{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h4{
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: 34px;
+            }
+            </style>
+        ";
+        return "<div> <h4>A soma dos valores é <i>$calc</i></h4></div>";
         
     }
     
@@ -37,7 +69,22 @@ class Controller extends BaseController
         $val = $_GET['value'];
         $valquad = $val * $val;
         
-        return "<h1>$val ao quadrado é $valquad </h1>";
+         echo "
+            <style>
+            div{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 34px;
+            }
+            </style>
+        ";
+        
+        return "<div> <h1>$val elevado ao quadrado é <i>$valquad</i></h1></div>";
     }
 }
 
